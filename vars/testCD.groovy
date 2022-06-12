@@ -5,7 +5,7 @@ def call(body){
     body()
 
     pipeline {
-        agent {lable 'docker'}
+        agent {label 'docker'}
         
         stages{
             stage('TestCD'){
