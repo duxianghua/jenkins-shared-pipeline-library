@@ -7,8 +7,12 @@ def call(body){
     pipeline {
         agent any
 
-        stage('hello') {
-            echo "Hello, World! test"
+        stages{
+            stage('TestCD'){
+                steps{
+                    sh 'echo "Hello, World!"'
+                }
+            }
         }
     }
 }
